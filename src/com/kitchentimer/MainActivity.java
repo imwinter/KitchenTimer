@@ -113,13 +113,16 @@ public class MainActivity extends ActionBarActivity {
 		long seconds = c / 1000;
 		long minutes = seconds / 60;
 		seconds -= minutes *60;
-		mCount.setText( minutes + ":" + seconds);
+		if(seconds<10 && minutes<10)
+			mCount.setText( "0"+ minutes + ":0" + seconds);
+		else if(minutes<10)
+				mCount.setText("0" + minutes + ":" + seconds);
+		else if(seconds<10)
+			mCount.setText( minutes + ":0" + seconds);
+		else 
+			mCount.setText( minutes + ":" + seconds);
 	}
 	
-	
-	
-	
-	
-	
+
 	
 }

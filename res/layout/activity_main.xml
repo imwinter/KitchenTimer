@@ -47,7 +47,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textView1"
-            android:layout_below="@+id/textView1"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/button2"
             android:onClick="clickMinus"
             android:text="@string/string_minus" />
 
@@ -55,8 +56,10 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button3"
+            android:layout_alignBottom="@+id/button3"
             android:layout_alignRight="@+id/textView1"
-            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/button2"
             android:onClick="clickPlus"
             android:text="@string/string_plus" />
 
